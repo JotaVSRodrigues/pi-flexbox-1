@@ -21,9 +21,10 @@ h1 {
     border: solid 2px #212427;
 
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: flex-start;
+    flex-direction: column;
 }
 
 .filho {
@@ -31,7 +32,25 @@ h1 {
     height: 80px;
     border-radius: 50px;
     text-align: center;
+    align-self: center;
 }
+
+.filho:first-child {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.filho:last-child {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    text-align: center;
+    align-self: flex-end;
+}
+
 
 .cor1 {
     background-color: #ED145B;
